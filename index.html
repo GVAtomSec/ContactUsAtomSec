@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AtomSec - A Cyber Security Application" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <title>Atom Cyber Security</title>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+  <header role="banner">
+    <a class="visually-hidden-focusable" href="#content">Skip to main content</a>
+    <div class="container-fluid">
+      <div class="d-flex justify-content-between">
+        <div class="align-content-center">
+          <a href="landingpage.html" title="Atom Logo">
+            <img src="/Img/Atom-logo.png" alt="Logo" width="100%" class="atom-logo d-inline-block align-center" />
+          </a>
+        </div>
+
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <div class="navbar-backdrop">
+                <div class="d-flex navbar-fixed">
+
+                  <button class="navbar-toggler navclose-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+                        <rect width="64" height="64" rx="32" fill="#51D59C" fill-opacity="0.1"></rect>
+                        <rect x="0.5" y="0.5" width="63" height="63" rx="31.5" stroke="#B8D8CB" stroke-opacity="0.2">
+                        </rect>
+                        <path
+                          d="M43.6668 22.6834L41.3168 20.3334L32.0002 29.65L22.6835 20.3334L20.3335 22.6834L29.6502 32L20.3335 41.3167L22.6835 43.6667L32.0002 34.35L41.3168 43.6667L43.6668 41.3167L34.3502 32L43.6668 22.6834Z"
+                          fill="#51D59C"></path>
+                      </svg>
+              </button>
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="landingpage.html" title="Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#solutions" title="Solutions">Solutions</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#about-us" title="About Us">About Us</a>
+                    </li>
+                  </ul>
+                  <a href="#get-in-touch" title="Schedule a demo">
+                  <button class="btn btn-brand" type="button" title="Speak to us">
+                    Speak to us
+                  </button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    </nav>
+  </header>
+  <div role="main" id="main">
+    <section class="container-fluid hero">
+      <div class="d-flex flex-row flex-wrap justify-content-between align-items-center">
+        <div class="left-section align-content-center">
+          <h1>
+            The Next-gen Penetration Testing Platform
+          </h1>
+          <p>
+            The platform that performs continuous offensive pentests across your apps, APIs & cloud.
+          </p>
+          <a href="#get-in-touch" title="Schedule a demo">
+            <button class="btn btn-brand" type="button" title="Schedule a demo">
+              Schedule a demo
+            </button>
+          </a>
+        </div>
+
+        <div class="right-section">
+          <img src="/Img/hero_image.png" alt="Logo" width="100%" class="d-inline-block align-center" />
+        </div>
+      </div>
+
+
+    </section>
+
+    <section class="container-fluid solutions" id="solutions">
+      <h2 class="pb-5">What exactly do we do?</h2>
+      <div class="d-flex flex-row flex-wrap justify-content-between solutions-group">
+        <div class="card">
+          <div class="pentest" alt="Pentesting Icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+              <rect width="64" height="64" rx="32" fill="#51D59C" fill-opacity="0.1" />
+              <rect x="0.5" y="0.5" width="63" height="63" rx="31.5" stroke="#B8D8CB" stroke-opacity="0.2" />
+              <path
+                d="M32 13.6666L17 20.3333V30.3333C17 39.5833 23.4 48.2333 32 50.3333C40.6 48.2333 47 39.5833 47 30.3333V20.3333L32 13.6666ZM32 31.9833H43.6667C42.7833 38.85 38.2 44.9666 32 46.8833V32H20.3333V22.5L32 17.3166V31.9833Z"
+                fill="#51D59C" />
+            </svg>
+          </div>
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div>
+              <h3 class="card-title">Penetration Testing Service</h3>
+              <p class="card-text">Our security team protects millions of users' data across major cloud platforms
+                through thorough penetration testing, ensuring that enterprise clients uphold the highest standards of
+                data protection and privacy.</p>
+            </div>
+            <a href="#" title="Read more">Read More
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                <path d="M8 2.7467L7.06 3.6867L10.78 7.41337H2.66667V8.7467H10.78L7.06 12.4734L8 13.4134L13.3333 8.08004L8 2.7467Z" fill="#155B55"/>
+                </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="cyberattack" alt="Surface Attack Icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
+              <rect x="0.666626" y="0.0800781" width="64" height="64" rx="32" fill="#51D59C" fill-opacity="0.1" />
+              <rect x="1.16663" y="0.580078" width="63" height="63" rx="31.5" stroke="#B8D8CB" stroke-opacity="0.2" />
+              <path
+                d="M41.9999 30.0967L39.6499 27.7467L45.5833 21.8301L47.9333 24.1801C47.7499 24.2301 41.9999 30.0967 41.9999 30.0967ZM34.3333 17.0801H30.9999V25.4134H34.3333V17.0801ZM23.3333 30.0967L25.6833 27.7467L19.7666 21.8134L17.3999 24.1801C17.5833 24.2301 23.3333 30.0967 23.3333 30.0967ZM45.9999 35.4134H40.2999C39.0166 38.3467 36.0666 40.4134 32.6666 40.4134C29.2666 40.4134 26.3166 38.3467 25.0333 35.4134H19.3333V43.7467H45.9999V35.4134ZM45.9999 32.0801C47.8333 32.0801 49.3333 33.5801 49.3333 35.4134V43.7467C49.3333 45.5801 47.8333 47.0801 45.9999 47.0801H19.3333C17.4999 47.0801 15.9999 45.5801 15.9999 43.7467V35.4134C15.9999 33.5801 17.4999 32.0801 19.3333 32.0801H27.6666C27.6666 34.8467 29.8999 37.0801 32.6666 37.0801C35.4333 37.0801 37.6666 34.8467 37.6666 32.0801H45.9999Z"
+                fill="#51D59C" />
+            </svg>
+          </div>
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div>
+              <h3 class="card-title">Attack Surface Analysis and Vulnerability Identification</h3>
+              <p class="card-text">Leveraging extensive penetration testing experience, our intelligent scanning
+                platform continuously monitors your application's attack surface, automatically identifying
+                vulnerabilities with advanced heuristics from real-world assessments.</p>
+            </div>
+            <a href="#" title="Read more">Read More
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                <path d="M8 2.7467L7.06 3.6867L10.78 7.41337H2.66667V8.7467H10.78L7.06 12.4734L8 13.4134L13.3333 8.08004L8 2.7467Z" fill="#155B55"/>
+                </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="siem" alt="SIEM Analysis Icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
+              <rect x="0.333374" y="0.0800781" width="64" height="64" rx="32" fill="#51D59C" fill-opacity="0.1" />
+              <rect x="0.833374" y="0.580078" width="63" height="63" rx="31.5" stroke="#B8D8CB" stroke-opacity="0.2" />
+              <path
+                d="M44 17.0801H20.6667C18.8334 17.0801 17.3334 18.5801 17.3334 20.4134V43.7467C17.3334 45.5801 18.8334 47.0801 20.6667 47.0801H44C45.8334 47.0801 47.3334 45.5801 47.3334 43.7467V20.4134C47.3334 18.5801 45.8334 17.0801 44 17.0801ZM44 43.7467H20.6667V20.4134H44V43.7467Z"
+                fill="#51D59C" />
+              <path d="M27.3334 32.0801H24V40.4134H27.3334V32.0801Z" fill="#51D59C" />
+              <path d="M40.6667 23.7467H37.3334V40.4134H40.6667V23.7467Z" fill="#51D59C" />
+              <path d="M34 35.4134H30.6667V40.4134H34V35.4134Z" fill="#51D59C" />
+              <path d="M34 28.7467H30.6667V32.0801H34V28.7467Z" fill="#51D59C" />
+            </svg>
+          </div>
+          <div class="card-body d-flex flex-column justify-content-between">
+            <div>
+              <h3 class="card-title">AtomSec Cloud Detection and Monitoring</h3>
+              <p class="card-text">Our specialized team will incorporate advanced Security Information and Event
+                Management (SIEM) analysis within your security architecture, customizing machine learning algorithms to
+                enhance threat detection capabilities and facilitate proactive prevention of security breaches. This
+                integration will enable real-time monitoring, anomaly detection, and automated incident response,
+                ensuring a robust defense against emerging threat.</p>
+            </div>
+            <a href="solutions.html" title="Read more">Read More
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                <path d="M8 2.7467L7.06 3.6867L10.78 7.41337H2.66667V8.7467H10.78L7.06 12.4734L8 13.4134L13.3333 8.08004L8 2.7467Z" fill="#155B55"/>
+                </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+
+    <section class="container-fluid schedule-demo">
+      <div class="card d-flex flex-row flex-wrap align-items-center justify-content-between">
+        <div class="left-section align-content-center">
+          <h2>
+            In a laoreet purus. Integer turpis quam, laoreet id orci nec
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum. Excepteur sint occaecat cupidatat non proident. </p>
+            <a href="#get-in-touch" title="Schedule a demo">
+              <button class="btn btn-brand" type="button" title="Schedule a demo">
+                Schedule a demo
+              </button>
+            </a>
+        </div>
+
+        <div class="right-section">
+          <img src="/Img/big-logo-illustration.png" alt="logo Illustration" width="100%"
+            class="d-inline-block align-center" />
+        </div>
+      </div>
+
+
+    </section>
+
+    <section class="container-fluid about-us" id="about-us">
+      <div class="d-flex flex-row flex-wrap justify-content-between">
+        <div class="left-section">
+          <h2>
+            About Us
+          </h2>
+          <p>
+            At Atom Cyber Security, we enhance organisation's security through compliance expertise, health checks, and
+            penetration testing. Our continuous monitoring solution identifies vulnerabilities, while our SIEM analysis
+            tool improves threat detection and proactively prevents breaches. Together, we ensure robust protection in a
+            fast-evolving digital landscape. </p>
+            <a href="#get-in-touch" title="Schedule a demo">
+              <button class="btn btn-brand" type="button" title="Speak to us">
+                Speak to us
+              </button></a>
+        </div>
+
+        <div class="right-section">
+          <img src="/Img/about_us.png" alt="Company Image" width="100%" class="d-inline-block align-center" />
+        </div>
+      </div>
+
+
+    </section>
+
+    <section class="container-fluid get-in-touch" id="get-in-touch">
+      <div class="d-flex flex-row flex-wrap justify-content-between">
+        <div class="left-section">
+          <h2>
+            Let’s get in touch.
+          </h2>
+          <p>
+            At Atom Cyber Security, we enhance organisation's security through compliance expertise, health checks, and
+            penetration testing. Our continuous monitoring solution identifies vulnerabilities, while our SIEM analysis
+            tool improves threat detection and proactively prevents breaches. Together, we ensure robust protection in a
+            fast-evolving digital landscape. </p>
+          <img src="/Img/logo-icon.png" alt="Company logo" width="110px" height="118px"
+            class="d-inline-block align-center" />
+        </div>
+
+        <div class="right-section">
+          <form class="card" action="https://formsubmit.co/gaurav@atomsec.ai" method="POST">
+            <div class="row">
+              <div class="col-lg-6 col-sm-12">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" name="FirstName" class="form-control" idaria-describedby="firstName" id="firstName"
+                  placeholder="Enter your first name here" aria-label="First Name">
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" name="LastName" class="form-control" aria-describedby="lastName" id="lastName"
+                  placeholder="Enter your last name here" aria-label="Last Name">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <label for="emailAddress" class="form-label">Work Email Address</label>
+                <input type="email" name="Email" class="form-control" aria-describedby="workEmailAddress"
+                  aria-label="Work Email Address" id="emailAddress" placeholder="example@email.com">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <label for="companyName" class="form-label">Company Name</label>
+                <input type="text" name="CompanyName" class="form-control" aria-describedby="companyName" id="companyName"
+                  placeholder="Enter your company name here" aria-label="Company Name">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 col-sm-12">
+                <label for="phoneNumber" class="form-label">Phone Number</label>
+                <input type="number" name="PhoneNumber" class="form-control" id="phoneNumber" aria-describedby="phoneNumber"
+                  placeholder="(***) ***-***" aria-label="Phone Number">
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <label for="jobTitle" class="form-label">Job Title</label>
+                <input type="text" name="JobTitle" class="form-control" aria-describedby="jobTitle" id="jobTitle"
+                  placeholder="Enter your job title here" aria-label="Job Title">
+              </div>
+            </div>
+            <div class="row">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" name="Message" id="message" rows="3" placeholder="Enter your message here"
+                aria-label="Message"></textarea>
+            </div>
+            <button type="submit" name="Submit" class="btn btn-brand" title="Submit">Submit</button>
+          </form>
+        </div>
+      </div>
+
+
+    </section>
+  </div>
+  <footer role="contentinfo">
+    <p>
+      © Atomsec 2025 · All rights reserved
+    </p>
+  </footer>
+</body>
+
+</html>
