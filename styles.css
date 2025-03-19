@@ -1,0 +1,781 @@
+/* Reset css */
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+a:hover {
+    color: #155B55 !important;
+    font-weight: 700;
+}
+
+.btn , .navbar-toggler{
+    &:hover, &:focus, &:focus-visible{
+    background-color: #51D59C !important;
+    color: #020A07 !important;
+    box-shadow: 0px 4px 12px 0px rgba(81, 213, 156, 0.5);
+    outline: 2px dotted #51d59c;
+    outline-offset: 4px;
+    }
+}
+
+body {
+    background-color: #ffffff;
+    color: #020A07;
+
+
+    /* Base CSS */
+
+    a:focus,
+    button:focus,
+    input:focus {
+        outline: 2px dotted #155B55 !important;
+        outline-offset: 0.4rem;
+    }
+
+    h1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 160%;
+        letter-spacing: 0%;
+
+    }
+
+    h2 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 160%;
+        letter-spacing: 0%;
+    }
+
+    h3 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 160%;
+        letter-spacing: 0%;
+    }
+
+    h4 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-size: 1.25rem;
+        line-height: 160%;
+        letter-spacing: 0%;
+    }
+
+    p {
+        font-family: "Lato", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 160%;
+        letter-spacing: 0;
+
+    }
+
+    a {
+        font-family: "Lato", sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 160%;
+        letter-spacing: 0;
+        color: #155B55;
+        text-underline-offset: .4rem;
+
+    }
+
+    .form {
+
+        label {
+            font-family: "Lato", sans-serif;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 160%;
+            letter-spacing: 0;
+        }
+
+        .form-control::placeholder {
+            font-family: "Lato", sans-serif;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 160%;
+            letter-spacing: 0;
+            color: #666;
+
+
+        }
+    }
+
+    .btn {
+        border-radius: .25rem;
+        padding: .5rem 1.5rem;
+        width: max-content;
+    }
+
+    .btn-brand {
+        background-color: #51D59C;
+        color: #020A07;
+        border-color: none;
+        font-weight: 700;
+
+    }
+
+    section {
+        width: fit-content;
+    }
+
+
+
+    /* ------ Header CSS -------- */
+
+    header {
+        .container-fluid {
+            padding: 2rem 10rem;
+            background-color: #ffffff;
+        }
+
+        .navbar,
+        .navbar-nav,
+        .navbar-collapse {
+            gap: 3rem;
+            padding: 0;
+
+            .container-fluid {
+                padding: 0 !important;
+            }
+
+            .btn-close {
+                display: none;
+            }
+        }
+        
+
+        .nav-link{
+            color: #020A07;
+
+            &.active {
+                font-weight: 900;
+                border-bottom: 2px solid #51D59C;
+            }
+        }
+
+        .nav-item {
+            width: max-content;
+        }
+
+        .navbar-fixed {
+            gap: 3rem;
+        }
+
+    }
+
+
+    /* ------ Hero Section CSS -------- */
+
+    div[role="main"] {
+
+        .container-fluid {
+            padding: 6.25rem 10rem;
+            /* justify-items: anchor-center; */
+        }
+
+
+        .hero {
+            padding: 3.25rem 10rem;
+            flex-direction: column;
+            align-items: flex-start;
+            background: linear-gradient(180deg, rgba(81, 212, 157, 0.60) 0%, rgba(81, 212, 157, 0.00) 100%);
+
+            .left-section {
+                width: 28%;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+
+        .siem-hero {
+            padding: 6.25rem 10rem;
+            background: linear-gradient(89.97deg, rgba(81, 212, 157, 0.2) 1.66%, rgba(81, 212, 157, 0.096) 99.97%);
+
+            .left-section {
+                width: 36%;
+                gap: 1rem;
+            }
+
+            .right-section {
+                width: 38%;
+            }
+        }
+
+
+
+
+        .solutions {
+            background-image: url(Img/background_shadow.png);
+
+            h2 {
+                justify-self: center;
+            }
+
+
+            .card {
+                display: flex;
+                padding: 2rem 1.5rem;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                flex: 1 0 0;
+                align-self: stretch;
+                border: 0;
+                border-radius: .75rem;
+                background: linear-gradient(125deg, #FFF 0%, #EBEBEB 100%);
+                box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.14), 0px 0px 2px 0px rgba(0, 0, 0, 0.10);
+
+                &:hover {
+                    background: #51D59C;
+
+                    .pentest,
+                    .siem,
+                    .cyberattack {
+                        path {
+                            fill: #ffffff;
+                        }
+
+                        rect {
+                            stroke: rgba(201, 242, 225, 1);
+                            fill: rgba(255, 255, 255, 0.25);
+                        }
+                    }
+                }
+            }
+
+
+
+            .d-flex {
+                gap: 2rem;
+            }
+        }
+
+        .schedule-demo {
+
+            .card {
+                display: flex;
+                padding: 0.75rem 5rem;
+                gap: .625rem;
+                align-self: stretch;
+                border-radius: 12px;
+                background: linear-gradient(90deg, #021715 100%, #001A18 100%);
+                color: #FFF;
+                background-image: url(Img/banner_bcg.png);
+                background-size: cover;
+                background-attachment: fixed;
+            }
+
+            .left-section {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+
+        .about-us {
+            background: #F8FDFB;
+
+            .left-section {
+                width: 36%;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+
+        .get-in-touch {
+
+            .left-section {
+                width: 36%;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .right-section {
+                width: 42rem;
+            }
+
+            .card {
+                width: 100%;
+                padding: 2rem 3rem;
+                gap: 2rem;
+                border-radius: 12px;
+                align-items: center;
+                background: #FFF;
+                border: 1px solid #51D59C;
+                box-shadow: 0px 4px 20px 0px rgba(81, 213, 156, 0.25);
+
+            }
+
+            .row {
+                width: -webkit-fill-available;
+            }
+
+            button {
+                margin-right: auto;
+            }
+
+        }
+
+        .key-features {
+            background: #F8FDFB;
+
+            h2 {
+                justify-self: center;
+            }
+
+            .left-section {
+                width: 36%;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            li {
+                margin-bottom: 0.75rem;
+            }
+
+            .container-fluid {
+                padding: 6.25rem 0;
+            }
+        }
+
+        .benefits {
+            background-image: url(Img/background_shadow.png);
+            background-position: bottom;
+            background-repeat: no-repeat;
+
+            h2 {
+                justify-self: center;
+
+                +p {
+                    text-align: center;
+                    width: 54%;
+                    justify-self: center;
+                }
+            }
+
+            .benefit-point {
+                min-width: 24rem;
+                display: flex;
+                padding: 2rem 1.5rem;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                flex: 1 0 0;
+                align-self: stretch;
+                border: 0;
+                gap: 0.75rem;
+            }
+
+            .d-flex {
+                gap: 2rem;
+            }
+        }
+    }
+
+    footer {
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-top: 1px solid rgba(0, 0, 0, 0.12);
+        color: #666666;
+    }
+
+
+}
+
+
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+    body {
+
+        & header {
+            .container-fluid {
+                padding: 2rem 1.5rem !important;
+            }
+        }
+
+        .container-fluid {
+            padding: 4rem 1.5rem !important;
+        }
+
+        .atom-logo {
+            width: 80% !important;
+        }
+
+        .navbar-backdrop {
+            background: rgba(2, 10, 7, 0.6);
+            position: fixed;
+            height: 100vh;
+            width: 100%;
+            top: 0px;
+            right: 0px;
+            z-index: 1;
+        }
+
+        .navclose-button {
+            border: none;
+            background: none;
+        }
+
+        .navbar-fixed {
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            width: 12rem;
+            background: #fff;
+            height: 100vh;
+            padding: 3rem 2rem !important;
+            z-index: 1;
+            display: block !important;
+
+            .btn-close {
+                display: contents !important;
+            }
+
+            .navbar-nav {
+                padding: 4rem 1rem;
+            }
+        }
+
+        & div[role="main"] {
+            & .schedule-demo {
+                .card {
+                    padding: 3rem !important;
+                }
+            }
+
+            & .get-in-touch {
+                .row {
+                    width: -webkit-fill-available;
+                    gap: 2rem;
+                }
+
+                .card {
+                    padding: 2rem;
+                }
+            }
+
+
+            .left-section {
+                width: 100% !important;
+                text-align: center;
+                align-items: anchor-center;
+            }
+        }
+
+        & div[role="main"] {
+
+            .siem-hero {
+                .right-section {
+                    width: 100% !important;
+                    text-align: center;
+                }
+            }
+
+            .key-features {
+                h2 {
+                    text-align: left;
+                }
+
+                .left-section {
+                    text-align: left;
+                    order: 0;
+                }
+
+                .right-section {
+                    order: 1;
+                }
+            }
+
+            .benefits {
+
+                h2 {
+
+                    +p {
+                        width: 100% !important;
+                    }
+                }
+
+                .benefit-point {
+                    min-width: 20rem;
+                    text-align: center;
+                    align-items: center;
+                }
+            }
+
+
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            text-align: center;
+        }
+
+        .d-flex {
+            gap: 2rem !important;
+        }
+
+        .get-in-touch {
+            button {
+                align-self: center;
+                margin: 0 !important;
+            }
+        }
+
+        .solutions {
+            .solutions-group {
+                flex-direction: column !important;
+
+                .card {
+                    text-align: center;
+                }
+
+                .cyberattack,
+                .siem,
+                .pentest {
+                    align-self: center;
+                }
+            }
+        }
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    body {
+
+        & header {
+            .container-fluid {
+                padding: 2rem 1.5rem !important;
+            }
+        }
+
+        .container-fluid {
+            padding: 4rem 1.5rem !important;
+        }
+
+
+        .right-section{
+            margin: auto;
+        }
+
+        .atom-logo {
+            width: 80% !important;
+        }
+
+        .navbar-backdrop {
+            background: rgba(2, 10, 7, 0.6);
+            position: fixed;
+            height: 100vh;
+            width: 100%;
+            top: 0px;
+            right: 0px;
+            z-index: 1;
+        }
+
+        .navclose-button {
+            border: none;
+            background: none;
+        }
+
+        .navbar-fixed {
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            width: 20rem;
+            background: #fff;
+            height: 100vh;
+            padding: 3rem 2rem !important;
+            z-index: 1;
+            display: block !important;
+
+            .btn-close {
+                display: contents !important;
+            }
+
+            .navbar-nav {
+                padding: 4rem 1rem;
+            }
+        }
+
+        & div[role="main"] {
+            & .schedule-demo {
+                .card {
+                    padding: 3rem !important;
+                }
+            }
+
+            & .get-in-touch {
+                .row {
+                    width: -webkit-fill-available;
+                    gap: 2rem;
+                }
+
+                .card {
+                    padding: 2rem;
+                }
+            }
+
+
+            .left-section {
+                width: revert !important;
+                text-align: center;
+                align-items: anchor-center;
+            }
+        }
+
+        & div[role="main"] {
+
+            .siem-hero {
+                .right-section {
+                    width: 100% !important;
+                    text-align: center;
+                }
+            }
+
+            .key-features {
+                h2 {
+                    text-align: left;
+                }
+
+                .left-section {
+                    text-align: left;
+                    order: 0;
+                }
+
+                .right-section {
+                    order: 1;
+                }
+            }
+
+            .benefits {
+
+                h2 {
+
+                    +p {
+                        width: 100% !important;
+                    }
+                }
+
+                .benefit-point {
+                    min-width: 20rem;
+                    text-align: center;
+                    align-items: center;
+                }
+            }
+
+
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            text-align: center;
+        }
+
+        .d-flex {
+            gap: 2rem !important;
+        }
+
+        .get-in-touch {
+            button {
+                align-self: center;
+                margin: 0 !important;
+            }
+        }
+
+        .solutions {
+            .solutions-group {
+                flex-direction: column !important;
+
+                .card {
+                    text-align: center;
+                }
+
+                .cyberattack,
+                .siem,
+                .pentest {
+                    align-self: center;
+                }
+            }
+        }
+    }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    body {
+        & header {
+            .container-fluid {
+                padding: 2rem 3rem;
+            }}
+
+            & div[role="main"] {
+                .siem-hero {
+                    padding: 6.25rem 3rem;
+
+                    .left-section {
+                        width: 52%;
+                    }
+                }
+            
+                .container-fluid {
+                    padding: 6.25rem 3rem;
+                }
+
+                .left-section, .right-section{
+                    width: 48%;
+                }
+
+                & .key-features {
+                    .container-fluid {
+                        padding: 3.25rem 0;
+                    }
+            }
+            & .schedule-demo {
+                .card {
+                    padding: 3rem;
+                }}
+}
+}
+}
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {}
